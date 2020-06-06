@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8"/>
+    <title>Invite</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Invite"/>
+    <meta name="MobileOptimized" content="320"/>
+    <!--srart theme style -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- favicon links -->
+    <link rel="shortcut icon" type="image/ico" href="images/header/favicon.ico"/>
+
+    <meta property="og:site_name" content="Invite">
+    <meta property="og:url" content="#####">
+    <meta property="og:title" content="Invite">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Invite">
+    <meta property="og:provider_name" content="Invite">
+
+    <meta property="og:image" content="#####">
+    <meta property="og:image:secure_url" content="#####">
+
+    <!--  Non-Essential, But Recommended -->
+
+    <meta property="og:site_name" content="Mor & Itamar Wedding">
+
+</head>
+<body>
+
+<div class="preloader">
+    <div class="preloader__status"><img src="images/content/icon.png" alt="loader">
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal__container">
+        <!-- close trigger -->
+        <button class="modal__container__button"><i class="fa fa-close" aria-hidden="true"></i></button>
+        <!-- modal content -->
+        <div class="modal__container__content">
+
+            <div class="modal__container__content__title">
+                תודה שעדכנתם אותנו. אם יש לכם שינוי, אנא עדכנו כאן בשנית
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Slider Wrapper Start -->
+<div id="slider" class="slider">
+    <div class="slider__confetti"></div>
+    <div class="slider__counter">
+        <div class="slider__counter__date">
+            תאריך כאן
+        </div>
+        <div class="slider__counter__text">
+            Title Here
+        </div>
+        <div class="slider__counter__timer">
+            <div class="slider__counter__timer__days"><span></span>
+                <div class="text">ימים</div>
+            </div>
+            <div class="slider__counter__timer__hours"><span></span>
+                <div class="text">שעות</div>
+            </div>
+            <div class="slider__counter__timer__minutes"><span></span>
+                <div class="text">דקות</div>
+            </div>
+        </div>
+        <div class="slider__counter__info">
+            <div class="slider__counter__info__title">הזמנה לערב מחלקה</div>
+            <div class="slider__counter__info__title2">של מחלקת פיתוח</div>
+            <div class="slider__counter__info__more">
+                <div>שתתקיים בתאריך ##/##/##</div>
+                <div> יום ###, בשעה ##:##</div>
+                <div>בחוף ###</div>
+                <div>תביאו בגד ים</div>
+            </div>
+        </div>
+
+        <a href="#guest" class="slider__counter__arrow">
+            <i class="fa fa-arrow-down fa-2x"></i>
+        </a>
+    </div>
+</div>
+<!-- Slider Wrapper End -->
+
+<!-- Guest Wrapper Start -->
+<div id="guest" class="guest">
+    <div class="guest__form">
+        <div class="guest__form__name">
+            <label for="name_input"></label>
+            <input type="text" placeholder="שמי" name="name" id="name_input" required>
+        </div>
+        <div class="guest__form__telephone">
+            <label for="telephone_input"></label>
+            <input type="text" placeholder="מספר טלפון" name="phone" id="telephone_input" required>
+        </div>
+        <div class="guest__form__title">האם הינך מגיע/ה?</div>
+        <div class="guest__form__buttons">
+            <div class="guest__form__buttons__button guest__form__buttons__button--can">ברור</div>
+            <div class="guest__form__buttons__button guest__form__buttons__button--cant">לא יכול/ה</div>
+        </div>
+        <div class="guest__form__number hidden">
+            <label for="subject_input"></label>
+            <select name="coming" id="subject_input" required>
+                <option disabled hidden selected>כמה מוזמנים ?</option>
+                <option value=0 hidden></option>
+                <option value=1>01</option>
+                <option value=2>02</option>
+                <option value=3>03</option>
+                <option value=4>04</option>
+            </select>
+        </div>
+        <div class="guest__form__submit">
+            <div class="guest__form__submit__icon" style="display: none">
+                <div></div>
+            </div>
+            <button class="guest__form__submit__button">שלח</button>
+        </div>
+    </div><!-- // End form -->
+</div>
+<!--<div class="id"></div>-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<!--main js file end-->
+</body>
+</html>

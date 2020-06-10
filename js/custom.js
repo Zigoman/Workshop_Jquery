@@ -158,6 +158,15 @@
 
         function setCounter(count) {
 
+            const now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            const distance = count - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            $('.slider__counter__timer__days span').html(Math.floor(distance / (1000 * 60 * 60 * 24)));
+            $('.slider__counter__timer__hours span').html(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+            $('.slider__counter__timer__minutes span').html(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
             // Time calculations for days, hours, minutes and seconds
         }
 
